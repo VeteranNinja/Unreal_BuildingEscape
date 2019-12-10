@@ -124,7 +124,7 @@
 		</ProjectConfiguration>
 	</ItemGroup>
 	<PropertyGroup Label="Globals">
-		<ProjectGuid>{B6D24F33-4C17-4D4A-8044-124881905511}</ProjectGuid>
+		<ProjectGuid>{59B7EB3B-DD3B-4068-9019-1A798AA4CC55}</ProjectGuid>
 		<Keyword>MakeFileProj</Keyword>
 		<RootNamespace>BuildingEscape</RootNamespace>
 		<PlatformToolset>v141</PlatformToolset>
@@ -563,9 +563,6 @@
 		<None Include="..\..\BuildingEscape.uproject" />
 		<None Include="..\..\Source\BuildingEscape.Target.cs" />
 		<None Include="..\..\Source\BuildingEscapeEditor.Target.cs" />
-		<None Include="..\..\Config\DefaultEditor.ini" />
-		<None Include="..\..\Config\DefaultEngine.ini" />
-		<None Include="..\..\Config\DefaultGame.ini" />
 		<None Include="..\..\Source\BuildingEscape\BuildingEscape.Build.cs" />
 		<ClCompile Include="..\..\Source\BuildingEscape\BuildingEscape.cpp" />
 		<ClInclude Include="..\..\Source\BuildingEscape\BuildingEscape.h" />
