@@ -17,7 +17,6 @@ UGrabber::UGrabber()
 
 }
 
-
 // Called when the game starts
 void UGrabber::BeginPlay()
 {
@@ -69,6 +68,7 @@ void UGrabber::Grab()
 	if (ActorHit)
 	{
 		// attach physics handle
+		if (!PhysicsHandle) { return; }
 		PhysicsHandle->GrabComponent(
 			ComponentToGrab,
 			NAME_None, // no bones needed
@@ -80,6 +80,7 @@ void UGrabber::Grab()
 
 void UGrabber::Release()
 {
+		if (!PhysicsHandle) { return; }
 		PhysicsHandle->ReleaseComponent();
 }
 
@@ -89,7 +90,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 
-
+	if (!PhysicsHandle) { return; }
 	// if the physics handle is attached
 	if (PhysicsHandle->GrabbedComponent)
 	{
